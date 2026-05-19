@@ -1081,8 +1081,39 @@ a {
         gap: 40px;
     }
     
+    /* Hero stacked responsiveness */
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .hero {
+        height: auto;
+        padding: 120px 0 60px;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+        padding: 30px 20px;
+    }
+    
+    .hero-btns {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .mascot-card {
+        margin: 0 auto;
+    }
+    
     .hero h1 {
-        font-size: 48px;
+        font-size: 44px;
+    }
+    
+    .about-image img {
+        box-shadow: 10px 10px 0 var(--primary-color);
     }
     
     .navbar .btn {
@@ -1114,6 +1145,17 @@ a {
     
     .nav-links.active li {
         margin: 15px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        display: none;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 }
 
